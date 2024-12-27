@@ -1,0 +1,217 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Press Start 2P', cursive;
+  background-color: #121212; /* Темный фон */
+  color: #fff;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+/* Кнопка открытия шторки */
+.open-btn a
+{position: absolute;
+  font-family: 'Arial', sans-serif;
+  box-shadow: 0 0 15px rgba(0, 255, 204, 0.6);
+  gap: -100px;
+  width: 150px;
+  height:70px;
+  left: 5px ;
+  top: 10px;
+  border-radius: 10px;
+  text-decoration: none;
+  padding: 15px 25px;
+
+  font-size: 30px;
+  color: white;
+  display: block;
+  transition: 0.3s;
+  text-transform: uppercase;
+
+}
+.open-btn a:hover{
+  background-color: #00ffcc;
+  transform: scale(1.1);}
+
+
+/* Контейнер с фоновой анимацией */
+.center_background {
+  position: absolute;
+  top: 150px;
+  left: 260px;
+  right: 260px;
+  width: 1400px;
+  height: 2500px;
+  background:none;
+  border-radius: 40px;
+  box-shadow: 0 0 30px rgba(0, 255, 204, 0.6);
+  overflow: hidden;
+
+}
+.news{
+  position: absolute;
+  top:-70px;
+  font-size: 20px;
+  color: #f39c12;
+  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);
+  background-color: rgba(0, 0, 0, 0.6);
+  padding: 20px;
+  width: 400px;
+  margin-top: 80px;
+  border-radius: 30px;
+  box-shadow: 0 0 15px rgba(0, 255, 204, 0.6);
+
+}
+
+.upload-box {
+  position: absolute;
+  top: 620px;
+  left: 310px;
+  display: inline-block;
+  padding: 15px;
+  background: none;
+  box-shadow: 0 0 15px rgba(0, 255, 204, 0.7);
+  color: white;
+  font-size: 18px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+width: 400px;
+}
+
+
+.upload-box:hover {
+  background-color: #00ffcc;
+}
+
+input[type="file"] {
+  display: none; /* Скрываем стандартный input */
+}
+
+.upload-text {
+  font-size: 21px;
+  font-weight: bold;
+}
+
+#image-container {
+  position: absolute;
+  top:200px;
+  left: 310px;
+  margin-top: 20px;
+  width: 400px;
+  height: 400px;
+  display: none; /* Изначально скрыто */
+}
+
+#image-container img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+
+section {
+  position: absolute;
+  left: 750px;
+  top: 150px;
+  max-width: 600px;
+  margin: 0 auto;
+  background: none;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+textarea {
+  width:800px;
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 5px;
+  background: rgba(255, 255, 255, 0.1);
+  resize: vertical;
+
+}
+textarea:focus{
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.save-text {
+  background:none;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 10px;
+  box-shadow: 0 0 15px rgba(0, 255, 204, 0.6);
+}
+
+.save-text :hover {
+  transform: scale(1.1);
+ }
+
+.h1_ava{
+  position: absolute;
+  color: #f39c12;
+  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);
+  top:170px;
+  left: 380px;
+}
+.input-box input {
+  position: absolute;
+  top:600px;
+  left: -70px;
+  width: 400px;
+  height: 50px;
+  background: rgba(255, 255, 255, 0.1);
+  border: 2px solid #fff;
+  border-radius: 40px;
+  font-size: 16px;
+  color: white;
+  padding: 20px 45px 20px 20px;
+  outline: none;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.6);
+  transition: all 0.3s ease-in-out;
+}
+.input-box input::placeholder {
+  color: #bbb;
+}
+
+.input-box input:focus {
+  border-color: #00ffcc;
+  box-shadow: 0 0 15px rgba(0, 255, 204, 0.7);
+}
+.h1_nik{
+  position: absolute;
+  color: #f39c12;
+  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);
+  top:550px;
+}
+
+.save:focus{
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.save-button {
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 10px;
+
+}
+
+.save-button :hover {
+  background-color: #45a049;
+}
+
+
+
+

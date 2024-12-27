@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Геймерский логин</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet"> <!-- Шрифт в стиле ретро-игр -->
+</head>
+<body>
+
+<!-- Описание сайта -->
+
+<!-- Контейнер для формы -->
+<div class="wrapper">
+  <form>
+    <h1>Login</h1>
+    <div class="input-box">
+      <i class='bx bxs-user'></i>
+      <input type="text" placeholder="Username" required>
+    </div>
+    <div class="input-box">
+      <i class='bx bxs-lock-alt'></i>
+      <input type="password" placeholder="Password" required>
+    </div>
+    <div class="remember">
+      <label><input type="checkbox"> Remember me</label>
+      <a href="#">Forgot password?</a>
+    </div>
+    <button onclick="goToPage()" type="submit" class="btn">Login</button>
+    <script>
+      function goToPage() {
+        window.location.href = "chose_game.html";
+      }
+    </script>
+    <div class="register-link">
+      <p>Don't have an account? <a href="#">Register</a></p>
+    </div>
+  </form>
+</div>
+
+</body>
+</html>

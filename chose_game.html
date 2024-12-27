@@ -1,0 +1,117 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Геймерский сайт</title>
+  <link rel="stylesheet" href="css/chose_game.css">
+  <script src="js/chose_game.js" defer></script>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlywIH" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet"> <!-- Шрифт в стиле ретро-игр -->
+</head>
+<body>
+
+<!-- Описание сайта -->
+<header class="header">
+  <h1 class="site-title">Новостной и образовательный сайт для геймеров</h1>
+  <p class="description-text">Этот сайт предлагает актуальные новости, фичи и полезную информацию для всех любителей видеоигр.</p>
+</header>
+
+<!-- Основной контент -->
+<main class="main-content">
+  <section class="card">
+    <a href="news.html" class="card-link">
+      <div class="card-body">
+        <h2>Новости</h2>
+        <p>Будьте в курсе последних событий из мира игр!</p>
+      </div>
+    </a>
+  </section>
+
+  <section class="card">
+    <a href="fichi.html" class="card-link">
+      <div class="card-body">
+        <h2>Фичи</h2>
+        <p>Узнайте о лучших фичах и инструментах для геймеров.</p>
+      </div>
+    </a>
+  </section>
+  <section class="apdeits">
+    <a href="apdeits.html" class="card-link">
+      <div class="card-body">
+        <h2>Обнавления</h2>
+        <p>Узнайте о новых обнавлениях в любимых играх.</p>
+      </div>
+    </a>
+  </section>
+  <section class="posts">
+    <a href="posts.html" class="posts-link">
+      <div class="posts-body">
+        <h2>Профиль</h2>
+        <p>Все ваши новости и посты об обновлениях и фичах.</p>
+      </div>
+    </a>
+  </section>
+  <section class="studio">
+    <a href="create_new.html" class="posts-link">
+      <div class="posts-body">
+        <h2>NOK студия</h2>
+        <p>Делай,твори</p>
+      </div>
+    </a>
+  </section>
+
+
+
+
+
+
+
+
+  <div class="popup-overlay" id="popupOverlay">
+    <div class="registration-popup" id="registrationPopup">
+      <div class="popup-content">
+        <span class="close-btn" id="closePopup">&times;</span>
+        <div class="popup-tabs">
+          <button class="tab-btn active" id="registerTab">Регистрация</button>
+          <button class="tab-btn" id="loginTab">Вход</button>
+        </div>
+        <!-- Форма регистрации -->
+        <form id="registerForm" class="popup-form">
+          <h2>Регистрация</h2>
+          <label for="username">Имя пользователя</label>
+          <input type="text" id="username" placeholder="Введите имя" required>
+          <label for="email">Email</label>
+          <input type="email" id="email" placeholder="Введите email" required>
+          <label for="password">Пароль</label>
+          <input type="password" id="password" placeholder="Введите пароль" required>
+          <button type="submit" class="submit-btn">Зарегистрироваться</button>
+        </form>
+        <!-- Форма входа -->
+        <form id="loginForm" class="popup-form hidden">
+          <h2>Вход</h2>
+          <label for="loginEmail">Email</label>
+          <input type="email" id="loginEmail" placeholder="Введите email" required>
+          <label for="loginPassword">Пароль</label>
+          <input type="password" id="loginPassword" placeholder="Введите пароль" required>
+          <button type="submit" class="submit-btn">Войти</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</main>
+<div class="top-buttons">
+  <a href="#" class="win-btn">Призы</a>
+  <a href="posts.html" class="profile-btn">
+    <img src="src/image_1.jpg" alt="Profile Picture" class="profile-img" height="2160" width="3840"/></a>
+</div>
+
+<!-- Основной контент -->
+<main class="main-content">
+  <!-- Ваш основной контент -->
+</main>
+
+
+</body>
+</html>

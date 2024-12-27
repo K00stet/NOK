@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Выбор видео</title>
+  <link rel="stylesheet" href="css/create_new.css">
+  <script src="js/create_new.js" defer></script>
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<!-- Картинка с плюсиком для загрузки видео -->
+<div class="open-btn">
+  <img src="src/image_1.jpg" id="open-video-btn" alt="Выбрать видео" />
+  <input type="file" id="video-input" accept="video/*" style="display:none;">
+</div>
+
+<!-- Контейнер для видео -->
+<div id="video-container" style="display:none;">
+  <video id="video-player" controls></video>
+</div>
+
+<div class="create-new">
+
+</div>
+
+
+<div class="open-bts">
+  <img src="src/image_1.jpg" id="open-image-btn" alt="Выбрать изображение" />
+  <input type="file" id="image-input" accept="image/*" style="display:none;">
+</div>
+
+
+<div id="image-container" style="display:none;">
+  <img id="image-preview" alt="Preview" />
+</div>
+
+</body>
+</html>

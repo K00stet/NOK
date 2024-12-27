@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Выезжающая шторка</title>
+  <link rel="stylesheet" href="css/nastroiki.css">
+  <script src="js/nastroiki.js" defer></script>
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet"> <!-- Ретро шрифт -->
+</head>
+<body>
+
+<!-- Кнопка для открытия шторки -->
+<div class="open-btn">
+  <a href="posts.html">Назад</a>
+</div>
+
+
+
+<!-- Контент страницы -->
+<div class="news">
+  <h1>
+    Настройка профиля
+  </h1>
+</div>
+
+<!-- Контейнер с фоновой анимацией -->
+<div class="center_background">
+</div>
+<div class="ava">
+</div>
+<div class="nik">
+</div>
+<div class="opisanie">
+
+</div>
+<!-- Кнопка загрузки -->
+<label for="file-input" class="upload-box">
+  <span class="upload-text">Выберите картинку</span>
+  <input type="file" id="file-input" accept="image/*">
+</label>
+<!-- Блок, куда будет вставляться изображение -->
+<div id="image-container"></div>
+
+
+
+<section>
+  <h2>Введите описание в поле ниже</h2>
+
+  <!-- Текстовое поле с несколькими строками -->
+  <textarea id="inputText" rows="6" cols="50" placeholder="Описание"></textarea>
+
+  <br>
+  <button class="save-text" onclick="">Отправить</button>
+
+
+  <p id="displayText"></p>
+</section>
+<div class="h1_ava">
+  <h1>
+    Аватарка
+  </h1>
+  <div class="input-box">
+    <i class='bx bxs-user'></i>
+    <input type="text" placeholder="Никнейм" >
+  </div>
+  <div class="h1_nik">
+    <h1>
+      Никнейм
+    </h1>
+
+  </div>
+</div>
+<div class="save">
+  <button class="save-button" onclick="">Сохранить</button>
+</div>
+</body>
+</html>

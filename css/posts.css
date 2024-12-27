@@ -1,0 +1,158 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Press Start 2P', cursive;
+  background-color: #121212; /* Темный фон */
+  color: #fff;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+/* Кнопка открытия шторки */
+.open-btn {
+  font-size: 30px;
+  cursor: pointer;
+  padding: 15px;
+  background-color: #111;
+  color: white;
+  border: none;
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 255, 204, 0.6);
+  transition: 0.3s ease;
+}
+
+.open-btn:hover {
+  background-color: #00ffcc;
+  transform: scale(1.1);
+}
+
+/* Стиль шторки */
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: -250px; /* Скрытая шторка */
+  width: 250px;
+  height: 100%;
+  background-color: #111;
+  color: #fff;
+  transition: left 0.3s ease; /* Плавное выезжание */
+  padding-top: 60px;
+  box-shadow: 0 0 15px rgba(0, 255, 204, 0.6);
+}
+
+.sidebar a {
+  padding: 15px 25px;
+  text-decoration: none;
+  font-size: 20px;
+  color: white;
+  display: block;
+  transition: 0.3s;
+  text-transform: uppercase;
+}
+
+.sidebar a:hover {
+  background-color: #575757;
+  color: #00ffcc;
+}
+
+.sidebar h2 {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  font-size: 1.5rem;
+  color: #f39c12;
+}
+
+.sidebar .close-btn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  cursor: pointer;
+}
+
+/* Контент страницы */
+
+
+
+/* Контейнер с фоновой анимацией */
+.center_background {
+  position: absolute;
+  top: 150px;
+  left: 260px;
+  right: 260px;
+  width: 1400px;
+  height: 2500px;
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 40px;
+  box-shadow: 0 0 30px rgba(0, 255, 204, 0.6);
+  overflow: hidden;
+
+}
+.news{
+  position: absolute;
+  top:-60px;
+  font-size: 30px;
+  color: #f39c12;
+  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);
+  background-color: rgba(0, 0, 0, 0.6);
+  padding: 20px;
+  width: 450px;
+  margin-top: 80px;
+  border-radius: 30px;
+  box-shadow: 0 0 15px rgba(0, 255, 204, 0.6);
+
+}
+.Profel a{
+  position: relative;
+
+  box-shadow: 0 0 15px rgba(0, 255, 204, 0.6);
+  gap: -100px;
+  width: 500px;
+  height:50px;
+  left: 750px;
+  top: 60px;
+  border-radius: 40px;
+  text-decoration: none;
+  padding: 15px 25px;
+
+  font-size: 20px;
+  color: white;
+  display: block;
+  transition: 0.3s;
+  text-transform: uppercase;
+
+}
+.Profel a:hover{
+  background-color: #575757;
+  color: #00ffcc;}
+.nicename{
+  position: relative;
+  height:600px;
+  width: 750px;
+  box-shadow: 0 0 15px rgba(0, 255, 204, 0.6);
+  top:10px;
+  left: -530px;
+  background: none;
+  border-radius: 40px;
+}
+.dostig{
+  position: absolute;
+  height:250px;
+  width: 500px;
+  box-shadow: 0 0 15px rgba(0, 255, 204, 0.6);
+left: 1085px;
+  top: 185px;
+  border-radius: 40px;
+
+}
